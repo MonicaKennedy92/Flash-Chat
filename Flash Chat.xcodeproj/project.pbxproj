@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206F2104DBED5604EDF507C2 /* Pods_Flash_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53441E0C826A0324B4D460EE /* Pods_Flash_Chat.framework */; };
 		8EFAF13F224B9E1E00AF3BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAF13E224B9E1E00AF3BD1 /* AppDelegate.swift */; };
 		8EFAF141224B9E1E00AF3BD1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAF140224B9E1E00AF3BD1 /* ChatViewController.swift */; };
 		8EFAF147224B9E1E00AF3BD1 /* Flash_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAF145224B9E1E00AF3BD1 /* Flash_Chat.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 		8EFAF181224B9FC300AF3BD1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAF180224B9FC300AF3BD1 /* RegisterViewController.swift */; };
 		8EFAF183224B9FC700AF3BD1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAF182224B9FC700AF3BD1 /* WelcomeViewController.swift */; };
 		8EFAF186224BA00700AF3BD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EFAF185224BA00700AF3BD1 /* Default-568h@2x.png */; };
+		8EFAF188224BA4B000AF3BD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EFAF187224BA4AF00AF3BD1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		431048CB8819EFC89B5D8865 /* Pods_Flash_ChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_ChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53441E0C826A0324B4D460EE /* Pods_Flash_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7100A9F48C2C6EFC2EBC6810 /* Pods_Flash_ChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_ChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFAF13B224B9E1E00AF3BD1 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFAF13E224B9E1E00AF3BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EFAF140224B9E1E00AF3BD1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +68,9 @@
 		8EFAF180224B9FC300AF3BD1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8EFAF182224B9FC700AF3BD1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8EFAF185224BA00700AF3BD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8EFAF187224BA4AF00AF3BD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD18AEAF5742097696DE9A8E /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		F44165A3881B07F47B8EBB1C /* Pods-Flash Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flash Chat/Pods-Flash Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206F2104DBED5604EDF507C2 /* Pods_Flash_Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B7351F0B1CFA647473A873A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD18AEAF5742097696DE9A8E /* Pods-Flash Chat.debug.xcconfig */,
+				F44165A3881B07F47B8EBB1C /* Pods-Flash Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8EFAF132224B9E1E00AF3BD1 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +116,8 @@
 				8EFAF155224B9E1F00AF3BD1 /* Flash ChatTests */,
 				8EFAF160224B9E1F00AF3BD1 /* Flash ChatUITests */,
 				8EFAF13C224B9E1E00AF3BD1 /* Products */,
+				2B7351F0B1CFA647473A873A /* Pods */,
+				A024789E6A732032D22C7ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,9 +212,20 @@
 		8EFAF184224B9FDD00AF3BD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EFAF187224BA4AF00AF3BD1 /* GoogleService-Info.plist */,
 				8EFAF14D224B9E1F00AF3BD1 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A024789E6A732032D22C7ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53441E0C826A0324B4D460EE /* Pods_Flash_Chat.framework */,
+				7100A9F48C2C6EFC2EBC6810 /* Pods_Flash_ChatTests.framework */,
+				431048CB8819EFC89B5D8865 /* Pods_Flash_ChatUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EFAF166224B9E1F00AF3BD1 /* Build configuration list for PBXNativeTarget "Flash Chat" */;
 			buildPhases = (
+				D5E07C4CE31A2B155E6E225E /* [CP] Check Pods Manifest.lock */,
 				8EFAF137224B9E1E00AF3BD1 /* Sources */,
 				8EFAF138224B9E1E00AF3BD1 /* Frameworks */,
 				8EFAF139224B9E1E00AF3BD1 /* Resources */,
+				1ECB0C17C0070EE231651A83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +338,7 @@
 				8EFAF17B224B9F7600AF3BD1 /* MessageCell.xib in Resources */,
 				8EFAF14C224B9E1F00AF3BD1 /* LaunchScreen.storyboard in Resources */,
 				8EFAF186224BA00700AF3BD1 /* Default-568h@2x.png in Resources */,
+				8EFAF188224BA4B000AF3BD1 /* GoogleService-Info.plist in Resources */,
 				8EFAF149224B9E1F00AF3BD1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +358,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ECB0C17C0070EE231651A83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flash Chat/Pods-Flash Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flash Chat/Pods-Flash Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E07C4CE31A2B155E6E225E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flash Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EFAF137224B9E1E00AF3BD1 /* Sources */ = {
@@ -502,6 +593,7 @@
 		};
 		8EFAF167224B9E1F00AF3BD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD18AEAF5742097696DE9A8E /* Pods-Flash Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +612,7 @@
 		};
 		8EFAF168224B9E1F00AF3BD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44165A3881B07F47B8EBB1C /* Pods-Flash Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
