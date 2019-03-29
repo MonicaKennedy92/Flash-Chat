@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
-
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    
     
     // Declare instance variables here
     
@@ -27,7 +29,8 @@ class ChatViewController: UIViewController {
         
         //TODO: Set yourself as the delegate and datasource here:
         
-        
+        messageTableView.delegate = self
+        messageTableView.dataSource = self
         
         //TODO: Set yourself as the delegate of the text field here:
         
@@ -38,7 +41,8 @@ class ChatViewController: UIViewController {
         
         
         //TODO: Register your MessageCell.xib file here:
-        
+        messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        configureTableView()
         
     }
     
@@ -46,7 +50,19 @@ class ChatViewController: UIViewController {
     
     //MARK: - TableView DataSource Methods
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
+        let messageArray = ["First MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst Message", "Second MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst MessageFirst Message", "Third MessageFirst MessageFirst MessageFirst Message"]
+        cell.messageBody.text = messageArray[indexPath.row]
+        
+        return cell
+        
+    }
     
     //TODO: Declare cellForRowAtIndexPath here:
     
@@ -62,7 +78,10 @@ class ChatViewController: UIViewController {
     
     //TODO: Declare configureTableView here:
     
-    
+    func configureTableView() {
+        messageTableView.rowHeight = UITableView.automaticDimension
+        messageTableView.estimatedRowHeight = 120.0
+    }
     
     ///////////////////////////////////////////
     
@@ -107,7 +126,12 @@ class ChatViewController: UIViewController {
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
         //TODO: Log out the user and send them back to WelcomeViewController
-        
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch {
+            print(error)
+        }
         
     }
     
